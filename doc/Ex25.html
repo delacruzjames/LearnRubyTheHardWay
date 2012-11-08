@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>module Ex25 - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>ex25.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-break_words">::break_words</a>
+    
+    <li><a href="#method-c-print_first_word">::print_first_word</a>
+    
+    <li><a href="#method-c-print_last_word">::print_last_word</a>
+    
+    <li><a href="#method-c-sort_sentence">::sort_sentence</a>
+    
+    <li><a href="#method-c-sort_words">::sort_words</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./copied_txt.html">copied</a>
+  
+    <li class="file"><a href="./cv_txt.html">cv</a>
+  
+    <li class="file"><a href="./ex15_sample_txt.html">ex15_sample</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Ex25.html">Ex25</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module Ex25</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-break_words" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">break_words</span><span
+            class="method-args">(stuff)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="break_words-source">
+            <pre><span class="ruby-comment"># File ex25.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">break_words</span>(<span class="ruby-identifier">stuff</span>)
+        <span class="ruby-comment"># this function will break up words for us</span>
+        <span class="ruby-identifier">words</span> = <span class="ruby-identifier">stuff</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">' '</span>)
+        <span class="ruby-identifier">words</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- break_words-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- break_words-method -->
+
+    
+      <div id="method-c-print_first_word" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_first_word</span><span
+            class="method-args">(words)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="print_first_word-source">
+            <pre><span class="ruby-comment"># File ex25.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">print_first_word</span>(<span class="ruby-identifier">words</span>)
+        <span class="ruby-comment"># print the first word and shifts the others down by one</span>
+        <span class="ruby-identifier">word</span> = <span class="ruby-identifier">words</span>.<span class="ruby-identifier">first</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-identifier">word</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- print_first_word-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- print_first_word-method -->
+
+    
+      <div id="method-c-print_last_word" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_last_word</span><span
+            class="method-args">(words)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="print_last_word-source">
+            <pre><span class="ruby-comment"># File ex25.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">print_last_word</span>(<span class="ruby-identifier">words</span>)
+        <span class="ruby-comment"># print the first word and shifts the others down by one</span>
+        <span class="ruby-identifier">word</span> = <span class="ruby-identifier">words</span>.<span class="ruby-identifier">last</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-identifier">word</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- print_last_word-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- print_last_word-method -->
+
+    
+      <div id="method-c-sort_sentence" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">sort_sentence</span><span
+            class="method-args">(sentence)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="sort_sentence-source">
+            <pre><span class="ruby-comment"># File ex25.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">sort_sentence</span>(<span class="ruby-identifier">sentence</span>)
+        <span class="ruby-comment"># takes in a full sentences and returns the sorted words.</span>
+        <span class="ruby-identifier">words</span> = <span class="ruby-identifier">break_words</span>(<span class="ruby-identifier">sentence</span>)
+        <span class="ruby-identifier">sort_words</span>(<span class="ruby-identifier">words</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- sort_sentence-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- sort_sentence-method -->
+
+    
+      <div id="method-c-sort_words" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">sort_words</span><span
+            class="method-args">(words)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="sort_words-source">
+            <pre><span class="ruby-comment"># File ex25.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">sort_words</span>(<span class="ruby-identifier">words</span>)
+        <span class="ruby-comment"># Sort the words</span>
+        <span class="ruby-identifier">words</span>.<span class="ruby-identifier">sort</span>()
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- sort_words-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- sort_words-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
